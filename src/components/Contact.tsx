@@ -26,7 +26,7 @@ export default function Contact() {
         viewport={{ once: true }}
         className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent"
       >
-        Let's Connect! 📬
+        Let&apos;s Connect! 📬
       </motion.h2>
 
       <motion.div

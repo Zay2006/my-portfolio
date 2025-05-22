@@ -33,6 +33,37 @@ export default function Contact() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        className="max-w-xl mx-auto mb-8 flex flex-wrap justify-center gap-6"
+      >
+        <a
+          href="tel:215-251-7167"
+          className="flex items-center gap-2 bg-white/5 backdrop-blur-lg rounded-xl p-4 hover:bg-white/10 transition-colors"
+        >
+          <span className="text-2xl">📱</span>
+          <span className="text-lg">215-251-7167</span>
+        </a>
+        <a
+          href="mailto:iwright4706@gmail.com"
+          className="flex items-center gap-2 bg-white/5 backdrop-blur-lg rounded-xl p-4 hover:bg-white/10 transition-colors"
+        >
+          <span className="text-2xl">✉️</span>
+          <span className="text-lg">iwright4706@gmail.com</span>
+        </a>
+        <a
+          href="https://github.com/Zay2006"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-white/5 backdrop-blur-lg rounded-xl p-4 hover:bg-white/10 transition-colors"
+        >
+          <span className="text-2xl">💻</span>
+          <span className="text-lg">GitHub</span>
+        </a>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         className="max-w-xl mx-auto bg-white/5 backdrop-blur-lg rounded-xl p-8"
       >
         <form onSubmit={handleSubmit} className="space-y-6">

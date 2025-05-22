@@ -26,7 +26,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
-        className="flex justify-center gap-4 mt-8"
+        className="flex flex-wrap justify-center gap-4 mt-8"
       >
         <a
           href="https://www.linkedin.com/in/isaiah-wright-384b2b26a/"
@@ -37,10 +37,24 @@ export default function Hero() {
           LinkedIn 👋
         </a>
         <a
+          href="https://github.com/Zay2006"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-2 rounded-full transition-colors"
+        >
+          GitHub 💻
+        </a>
+        <a
+          href="tel:215-251-7167"
+          className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full transition-colors"
+        >
+          Call Me 📱
+        </a>
+        <a
           href="mailto:iwright4706@gmail.com"
           className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors"
         >
-          Contact Me ✉️
+          Email Me ✉️
         </a>
       </motion.div>
     </motion.section>

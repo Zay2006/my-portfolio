@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Isaiah Wright's Portfolio
+
+A modern, animated portfolio website showcasing my work as a Voice Actor, Tech Enthusiast, Creative Artist, and Esports Enthusiast. Built with Next.js and Tailwind CSS.
+
+## Features
+
+- **Modern Design**: Sleek, dark theme with glassmorphism effects and gradient accents
+- **Animated UI**: Smooth transitions and animations using Framer Motion
+- **Fully Responsive**: Works beautifully on all devices
+- **Interactive Sections**:
+  - Hero section with personal introduction
+  - Skills showcase with categorized expertise
+  - Project gallery featuring:
+    - Social Dashboard Analytics
+    - TimedTimer 3.0 Focus Timer
+    - YouTube Viewer 2.0
+  - Contact section with form and direct contact options
+
+## Built With
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Zay2006/my-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
+- Phone: 215-251-7167
+- Email: iwright4706@gmail.com
+- LinkedIn: [Isaiah Wright](https://www.linkedin.com/in/isaiah-wright-384b2b26a/)
+- GitHub: [Zay2006](https://github.com/Zay2006)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Visit the live portfolio at: [Portfolio URL]

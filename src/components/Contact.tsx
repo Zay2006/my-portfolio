@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -9,13 +9,24 @@ export default function Contact() {
     email: '',
     message: ''
   });
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle the form submission
-    // For now, we'll just console.log the data
-    console.log(formData);
-    window.location.href = `mailto:iwright4706@outlook.com?subject=Portfolio Contact from ${formData.name}&body=${formData.message}`;
+    
+    // Open email client with pre-filled content
+    window.location.href = `mailto:iwright4706@outlook.com?subject=Portfolio Contact from ${formData.name}&body=${formData.message}%0A%0AReply to: ${formData.email}`;
+    
+    // Show success message
+    setShowSuccess(true);
+    
+    // Reset form
+    setFormData({ name: '', email: '', message: '' });
+    
+    // Hide success message after 5 seconds
+    setTimeout(() => {
+      setShowSuccess(false);
+    }, 5000);
   };
 
   return (
@@ -64,8 +75,23 @@ export default function Contact() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="max-w-xl mx-auto bg-white/5 backdrop-blur-lg rounded-xl p-8"
+        className="max-w-xl mx-auto bg-white/5 backdrop-blur-lg rounded-xl p-8 relative"
       >
+        <AnimatePresence>
+          {showSuccess && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="absolute top-4 left-4 right-4 bg-green-500/20 border border-green-500/50 rounded-lg p-4 text-center backdrop-blur-lg"
+            >
+              <p className="text-white font-medium">
+                Thanks for reaching out! I&apos;ll reply within 48 hours ✨
+              </p>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-2">

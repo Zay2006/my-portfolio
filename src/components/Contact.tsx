@@ -15,7 +15,7 @@ export default function Contact() {
     // Here you would typically handle the form submission
     // For now, we'll just console.log the data
     console.log(formData);
-    window.location.href = `mailto:iwright4706@gmail.com?subject=Portfolio Contact from ${formData.name}&body=${formData.message}`;
+    window.location.href = `mailto:iwright4706@outlook.com?subject=Portfolio Contact from ${formData.name}&body=${formData.message}`;
   };
 
   return (
@@ -36,18 +36,18 @@ export default function Contact() {
         className="max-w-xl mx-auto mb-8 flex flex-wrap justify-center gap-6"
       >
         <a
-          href="tel:215-251-7167"
+          href="tel:215-720-1444"
           className="flex items-center gap-2 bg-white/5 backdrop-blur-lg rounded-xl p-4 hover:bg-white/10 transition-colors"
         >
           <span className="text-2xl">📱</span>
-          <span className="text-lg">215-251-7167</span>
+          <span className="text-lg">(215) 720-1444</span>
         </a>
         <a
-          href="mailto:iwright4706@gmail.com"
+          href="mailto:iwright4706@outlook.com"
           className="flex items-center gap-2 bg-white/5 backdrop-blur-lg rounded-xl p-4 hover:bg-white/10 transition-colors"
         >
           <span className="text-2xl">✉️</span>
-          <span className="text-lg">iwright4706@gmail.com</span>
+          <span className="text-lg">iwright4706@outlook.com</span>
         </a>
         <a
           href="https://github.com/Zay2006"

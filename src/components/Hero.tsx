@@ -45,13 +45,13 @@ export default function Hero() {
           GitHub 💻
         </a>
         <a
-          href="tel:215-251-7167"
+          href="tel:215-720-1444"
           className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full transition-colors"
         >
           Call Me 📱
         </a>
         <a
-          href="mailto:iwright4706@gmail.com"
+          href="mailto:iwright4706@outlook.com"
           className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors"
         >
           Email Me ✉️

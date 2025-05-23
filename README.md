@@ -43,8 +43,8 @@ npm run dev
 
 ## Contact
 
-- Phone: 215-251-7167
-- Email: iwright4706@gmail.com
+- Phone: (215) 720-1444
+- Email: iwright4706@outlook.com
 - LinkedIn: [Isaiah Wright](https://www.linkedin.com/in/isaiah-wright-384b2b26a/)
 - GitHub: [Zay2006](https://github.com/Zay2006)
 
